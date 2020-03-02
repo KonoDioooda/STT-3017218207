@@ -31,8 +31,8 @@ public class Cashier {
 		return total;
 	}
 
-	// 贪心算法
-	// 某些情况下可能不适用
+	// 璐績绠楁硶
+	// 鏌愪簺鎯呭喌涓嬪彲鑳戒笉閫傜敤
 	public boolean takeOut(int amount) {
 
 		boolean res = false;
@@ -46,7 +46,7 @@ public class Cashier {
 			values.add(value);
 		}
 		
-		// 由大到小排序
+		// 鐢卞ぇ鍒板皬鎺掑簭
 		values.sort(new Comparator<Integer>() {
 			@Override
 			public int compare(Integer o1, Integer o2) {
@@ -79,17 +79,4 @@ public class Cashier {
 		return res;
 	}
 
-	
-	public static void main(String[] args) {
-		boolean b = new Cashier(new HashMap<Integer, Integer>() {
-			{
-				put(50, 1);
-				put(20, 1);
-				put(10, 1);
-				put(5, 2);
-				put(1, 3);
-			}
-		}).takeOut(9);
-		System.out.print(b);
-	}
 }
