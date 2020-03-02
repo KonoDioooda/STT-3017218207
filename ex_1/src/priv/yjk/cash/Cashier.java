@@ -12,16 +12,6 @@ public class Cashier {
 	public Cashier(Map<Integer, Integer> cashes) {
 		this.cashes = cashes;
 	}
-	
-//	public Map<Integer, Integer> cashes = new HashMap<Integer, Integer>() {
-//		{
-//			put(50, 1);
-//			put(20, 1);
-//			put(10, 1);
-//			put(5, 2);
-//			put(3, 1);
-//		}
-//	};
 
 	public int getTotal() {
 		int total = 0;
